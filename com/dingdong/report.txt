@@ -1,0 +1,84 @@
+platform linux -- Python 3.6.9, pytest-5.3.2, py-1.8.0, pluggy-0.13.1 -- /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct/.tox/test-cinder-unity/bin/python3.6
+cachedir: .tox/test-cinder-unity/.pytest_cache
+rootdir: /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct, inifile: pytest.ini
+plugins: forked-1.1.3, xdist-1.31.0
+[gw0] linux Python 3.6.9 cwd: /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct
+[gw1] linux Python 3.6.9 cwd: /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct
+[gw2] linux Python 3.6.9 cwd: /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct
+[gw0] Python 3.6.9 (default, Nov  7 2019, 10:44:02)  -- [GCC 8.3.0]
+[gw1] Python 3.6.9 (default, Nov  7 2019, 10:44:02)  -- [GCC 8.3.0]
+[gw2] Python 3.6.9 (default, Nov  7 2019, 10:44:02)  -- [GCC 8.3.0]
+gw0 [6] / gw1 [6] / gw2 [6]
+scheduling tests via LoadScheduling
+
+openstack_ct/tests/cinder/test_attach_detach_volume.py::AttachDetachVolumeTest::test_attach_detach_volume_via_fc
+openstack_ct/tests/cinder/test_extend_volume.py::ExtendVolumeTest::test_extend_compressed_volume
+openstack_ct/tests/cinder/test_attach_detach_volume.py::AttachDetachVolumeTest::test_attach_detach_compressed_volume_via_fc
+[gw0] [ 16%] SKIPPED openstack_ct/tests/cinder/test_attach_detach_volume.py::AttachDetachVolumeTest::test_attach_detach_compressed_volume_via_fc
+[gw2] [ 33%] SKIPPED openstack_ct/tests/cinder/test_extend_volume.py::ExtendVolumeTest::test_extend_compressed_volume
+openstack_ct/tests/cinder/test_extend_volume.py::ExtendVolumeTest::test_extend_volume
+openstack_ct/tests/cinder/test_volume_snapshot.py::VolumeSnapshotTest::test_create_delete_volume_snapshot
+[gw0] [ 50%] PASSED openstack_ct/tests/cinder/test_extend_volume.py::ExtendVolumeTest::test_extend_volume
+[gw2] [ 66%] PASSED openstack_ct/tests/cinder/test_volume_snapshot.py::VolumeSnapshotTest::test_create_delete_volume_snapshot
+[gw1] [ 83%] PASSED openstack_ct/tests/cinder/test_attach_detach_volume.py::AttachDetachVolumeTest::test_attach_detach_volume_via_fc
+openstack_ct/tests/cinder/test_volume_snapshot.py::VolumeSnapshotTest::test_create_delete_compressed_volume_snapshot
+[gw1] [100%] SKIPPED openstack_ct/tests/cinder/test_volume_snapshot.py::VolumeSnapshotTest::test_create_delete_compressed_volume_snapshot
+
+============================================================================ warnings summary =============================================================================
+.tox/test-cinder-unity/lib/python3.6/site-packages/_pytest/junitxml.py:436
+  /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct/.tox/test-cinder-unity/lib/python3.6/site-packages/_pytest/junitxml.py:436: PytestDeprecationWarning: The 'junit_family' default value will change to 'xunit2' in pytest 6.0.
+  Add 'junit_family=legacy' to your pytest.ini file to silence this warning and make your suite compatible.
+    _issue_warning_captured(deprecated.JUNIT_XML_DEFAULT_FAMILY, config.hook, 2)
+
+.tox/test-cinder-unity/lib/python3.6/site-packages/testtools/matchers/_warnings.py:47
+  /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct/.tox/test-cinder-unity/lib/python3.6/site-packages/testtools/matchers/_warnings.py:47: DeprecationWarning: invalid escape sequence \s
+    """
+
+.tox/test-cinder-unity/lib/python3.6/site-packages/testtools/content.py:106
+  /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct/.tox/test-cinder-unity/lib/python3.6/site-packages/testtools/content.py:106: DeprecationWarning: invalid escape sequence \*
+    """
+
+.tox/test-cinder-unity/lib/python3.6/site-packages/netaddr/strategy/eui48.py:123
+.tox/test-cinder-unity/lib/python3.6/site-packages/netaddr/strategy/eui48.py:123
+.tox/test-cinder-unity/lib/python3.6/site-packages/netaddr/strategy/eui48.py:123
+  /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct/.tox/test-cinder-unity/lib/python3.6/site-packages/netaddr/strategy/eui48.py:123: DeprecationWarning: invalid escape sequence \.
+    '^' + '\.'.join(['([0-9A-F]{1,4})'] * 3) + '$',
+
+.tox/test-cinder-unity/lib/python3.6/site-packages/netaddr/strategy/eui64.py:110
+.tox/test-cinder-unity/lib/python3.6/site-packages/netaddr/strategy/eui64.py:110
+.tox/test-cinder-unity/lib/python3.6/site-packages/netaddr/strategy/eui64.py:110
+  /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct/.tox/test-cinder-unity/lib/python3.6/site-packages/netaddr/strategy/eui64.py:110: DeprecationWarning: invalid escape sequence \.
+    '^' + '\.'.join(['([0-9A-F]{1,4})'] * 4) + '$',
+
+.tox/test-cinder-unity/lib/python3.6/site-packages/cinderclient/client.py:25
+.tox/test-cinder-unity/lib/python3.6/site-packages/cinderclient/client.py:25
+.tox/test-cinder-unity/lib/python3.6/site-packages/cinderclient/client.py:25
+  /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct/.tox/test-cinder-unity/lib/python3.6/site-packages/cinderclient/client.py:25: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+    import imp
+
+.tox/test-cinder-unity/lib/python3.6/site-packages/prettytable.py:74
+.tox/test-cinder-unity/lib/python3.6/site-packages/prettytable.py:74
+  /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct/.tox/test-cinder-unity/lib/python3.6/site-packages/prettytable.py:74: DeprecationWarning: invalid escape sequence \[
+    _re = re.compile("\033\[[0-9;]*m")
+
+.tox/test-cinder-unity/lib/python3.6/site-packages/prettytable.py:800
+.tox/test-cinder-unity/lib/python3.6/site-packages/prettytable.py:800
+  /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct/.tox/test-cinder-unity/lib/python3.6/site-packages/prettytable.py:800: DeprecationWarning: invalid escape sequence \{
+    self.vertical_char = random.choice("~!@#$%^&*()_+|-=\{}[];':\",./;<>?")
+
+.tox/test-cinder-unity/lib/python3.6/site-packages/prettytable.py:801
+.tox/test-cinder-unity/lib/python3.6/site-packages/prettytable.py:801
+  /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct/.tox/test-cinder-unity/lib/python3.6/site-packages/prettytable.py:801: DeprecationWarning: invalid escape sequence \{
+    self.horizontal_char = random.choice("~!@#$%^&*()_+|-=\{}[];':\",./;<>?")
+
+.tox/test-cinder-unity/lib/python3.6/site-packages/prettytable.py:802
+.tox/test-cinder-unity/lib/python3.6/site-packages/prettytable.py:802
+  /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct/.tox/test-cinder-unity/lib/python3.6/site-packages/prettytable.py:802: DeprecationWarning: invalid escape sequence \{
+    self.junction_char = random.choice("~!@#$%^&*()_+|-=\{}[];':\",./;<>?")
+
+-- Docs: https://docs.pytest.org/en/latest/warnings.html
+------------------------- generated xml file: /home/stack/jenkins/workspace/ct_latest_cinder_unity/748/openstack_ct/test-cinder-unity-result.xml --------------------------
+========================================================== 3 passed, 3 skipped, 20 warnings in 145.21s (0:02:25) ==========================================================
+_________________________________________________________________________________ summary _________________________________________________________________________________
+  test-cinder-unity: commands succeeded
+  congratulations :)
